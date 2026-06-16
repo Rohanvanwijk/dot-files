@@ -1,0 +1,55 @@
+@define-color bg	#0A0A0A;
+@define-color bg-dark	#0A1A3F;
+@define-color blue	#1A4CCF;
+@define-color red	#CF1A1A;
+@define-color fg	#E6E6E6;
+@define-color yellow	#F2D000;
+@define-color green	#90F5A8;
+
+
+* {
+	font-family: FreeSans;
+	font-size: 14pt;
+}
+
+window#waybar {
+	background: @bg;
+	color: @fg;
+}
+
+#workspaces button.active {
+	background: @blue;
+	color: @fg;
+}
+
+#workspaces button {
+	border-radius: 0;
+}
+
+#clock {
+	color: @yellow;
+}
+
+#battery.warning {
+	color: @red;
+}
+
+#battery.full {
+	color: @green;
+}
+
+#battery.discharging {
+	color: @yellow;
+}
+
+#cpu.warning {
+	color: @yellow;
+}
+
+#cpu.critical {
+	color: @red;
+}
+
+#clock, #network, #pulseaudio, #battery, #cpu, #memory, #temperature {
+	padding: 5px 10px;
+}

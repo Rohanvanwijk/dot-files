@@ -1,0 +1,41 @@
+{
+	"layer": "top",
+	"position": "top",
+
+	"modules-left": ["hyprland/workspaces", "cpu", "memory", "temperature"],
+	"modules-center": ["clock"],
+	"modules-right": ["network", "battery"],
+
+	"cpu": {
+		"format": "CPU: {usage}%",
+		"interval": 5 
+	},
+
+	"memory": {
+		"format": "RAM: {percentage}%",
+		"interval": 5
+	},
+	
+	"clock": {
+		"interval": 60
+	},
+
+	"battery": {
+		"format": "{power}: {capacity}%",
+		"bat": "BAT0",
+		"adapter": "ACAD"
+	},
+
+	"custom/wifi": {
+		"exec": "~/myscripts/wifi-ssid.sh",
+		"interval": 5,
+		"tooltip": false
+	},
+
+	"network": {
+		"interface": "wlan0",
+		"format-wifi": "{essid}",
+		"tooltip": false
+	}
+}
+
