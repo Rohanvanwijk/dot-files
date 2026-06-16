@@ -26,11 +26,6 @@
 		"adapter": "ACAD"
 	},
 
-	"custom/wifi": {
-		"exec": "~/myscripts/wifi-ssid.sh",
-		"interval": 5,
-		"tooltip": false
-	},
 
 	"network": {
 		"interface": "wlan0",
